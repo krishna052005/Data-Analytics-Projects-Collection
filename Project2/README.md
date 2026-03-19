@@ -1,37 +1,101 @@
-# 📊 Banking Risk Analysis (Power BI)
+# 📊 Banking Dashboard (Power BI Project)
 
-## 🚀 Overview
-
-Analyzed banking data using Power BI to assess customer risk and support better decision-making.
-
----
-
-## 🧰 Tools
-
-* Power BI
-* Excel / CSV
-* Power Query
+## 📌 Problem Statement
+Develop a basic understanding of **risk analytics in banking and financial services** and analyze how data can be used to minimize the risk of financial loss while lending to customers.
 
 ---
 
-## 📊 Key Features
-
-* Risk segmentation of customers
-* Financial behavior analysis
-* Interactive dashboard
+## 💡 Solution
+This project uses **Power BI dashboards** to help financial institutions make data-driven decisions.  
+The dashboards analyze applicant profiles and determine whether a loan should be approved based on the likelihood of repayment.
 
 ---
 
-## 🔍 Insights
+## 🗂️ Dataset Description
+The dataset contains multiple interrelated tables, including:
+- Banking Relationship
+- Client-Banking
+- Gender
+- Investment Advisor
+- Period
 
-* Certain customer groups show higher risk
-* Financial patterns help identify risk levels
-* Key indicators influence risk assessment
+These tables are connected using **primary and foreign keys**.
 
 ---
 
-## 📚 Learnings
+## 🧹 Data Cleaning & Transformation
+Key preprocessing steps include:
+- Created **Engagement Timeframe** column
+- Calculated **Engagement Days** using date difference
+- Binned **Estimated Income** into:
+  - Low (< 100,000)
+  - Mid (< 300,000)
+- Added **Processing Fees** column based on fee structure
 
-* Risk analysis using data
-* Power BI dashboard building
-* Data-driven decision making
+---
+
+## 🧮 DAX Calculations
+### 🔹 SUM
+DAX:
+Bank Deposit = SUM('Clients - Banking'[Bank Deposits])
+###🔹 DISTINCTCOUNT
+Total Clients = DISTINCTCOUNT('Clients - Banking'[Client ID])
+###🔹 SUMX
+Total Fees = SUMX('Clients - Banking', [Total Loan] * 'Clients - Banking'[Processing Fees])
+###🔹 DATEDIFF
+Engagement Days = DATEDIFF('Clients - Banking'[Joined Bank], TODAY(), DAY)
+
+---
+
+##📈 Key Performance Indicators (KPIs)
+
+Total Clients – Total number of banking customers
+Total Loan – Bank Loan + Business Lending + Credit Card Balance
+Bank Loan – Loan amount given to clients
+Business Lending – Loans provided to businesses
+Total Deposit – Combined deposits across accounts
+Total Fees – Fees charged by the bank
+Bank Deposit – Total deposited money
+Checking Account – Transactional account balance
+Savings Account – Interest-bearing deposits
+Foreign Currency Account – Non-local currency accounts
+Credit Card Balance – Outstanding credit amount
+Engagement Length – Customer engagement duration
+
+---
+
+##📊 Dashboards & Visualizations
+
+🏠 Home Dashboard
+💳 Loan Analysis
+💰 Deposit Analysis
+
+---
+
+##📌 Summary Dashboard
+
+📌 Insights & Conclusion
+
+Power BI dashboards enable effective decision-making in banking
+Helps identify loan repayment capability of clients
+Private banks tend to have more clients
+Provides insights into:
+Loan distribution by nationality
+Account-wise fund distribution
+Customer engagement patterns
+
+---
+
+##🚀 Future Scope
+Improve risk prediction models
+Enhance dashboards with real-time data
+Identify strategies to increase customer acquisition
+Provide deeper insights into customer financial behavior
+
+##🛠️ Tools & Technologies
+Power BI
+DAX (Data Analysis Expressions)
+Data Modeling
+### 🔹 SUM
+```DAX
+Bank Deposit = SUM('Clients - Banking'[Bank Deposits])
