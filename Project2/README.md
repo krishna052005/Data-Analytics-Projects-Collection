@@ -35,6 +35,7 @@ Key preprocessing steps include:
 ---
 
 ## 🧮 DAX Calculations
+
 ### 🔹 SUM
 DAX:
 Bank Deposit = SUM('Clients - Banking'[Bank Deposits])
@@ -96,6 +97,3 @@ Provide deeper insights into customer financial behavior
 Power BI
 DAX (Data Analysis Expressions)
 Data Modeling
-### 🔹 SUM
-```DAX
-Bank Deposit = SUM('Clients - Banking'[Bank Deposits])
