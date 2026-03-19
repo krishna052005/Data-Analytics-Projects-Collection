@@ -34,20 +34,6 @@ Key preprocessing steps include:
 
 ---
 
-## 🧮 DAX Calculations
-
-### 🔹 SUM
-DAX:
-Bank Deposit = SUM('Clients - Banking'[Bank Deposits])
-###🔹 DISTINCTCOUNT
-Total Clients = DISTINCTCOUNT('Clients - Banking'[Client ID])
-###🔹 SUMX
-Total Fees = SUMX('Clients - Banking', [Total Loan] * 'Clients - Banking'[Processing Fees])
-###🔹 DATEDIFF
-Engagement Days = DATEDIFF('Clients - Banking'[Joined Bank], TODAY(), DAY)
-
----
-
 ## 📈 Key Performance Indicators (KPIs)
 
 - **Total Clients**  
