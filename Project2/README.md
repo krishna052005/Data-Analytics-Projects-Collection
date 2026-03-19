@@ -48,24 +48,47 @@ Engagement Days = DATEDIFF('Clients - Banking'[Joined Bank], TODAY(), DAY)
 
 ---
 
-##📈 Key Performance Indicators (KPIs)
+## 📈 Key Performance Indicators (KPIs)
 
-Total Clients – Total number of banking customers
-Total Loan – Bank Loan + Business Lending + Credit Card Balance
-Bank Loan – Loan amount given to clients
-Business Lending – Loans provided to businesses
-Total Deposit – Combined deposits across accounts
-Total Fees – Fees charged by the bank
-Bank Deposit – Total deposited money
-Checking Account – Transactional account balance
-Savings Account – Interest-bearing deposits
-Foreign Currency Account – Non-local currency accounts
-Credit Card Balance – Outstanding credit amount
-Engagement Length – Customer engagement duration
+- **Total Clients**  
+  Total number of banking customers  
+
+- **Total Loan**  
+  Bank Loan + Business Lending + Credit Card Balance  
+
+- **Bank Loan**  
+  Loan amount given to clients  
+
+- **Business Lending**  
+  Loans provided to businesses  
+
+- **Total Deposit**  
+  Combined deposits across accounts  
+
+- **Total Fees**  
+  Fees charged by the bank  
+
+- **Bank Deposit**  
+  Total deposited money  
+
+- **Checking Account**  
+  Transactional account balance  
+
+- **Savings Account**  
+  Interest-bearing deposits  
+
+- **Foreign Currency Account**  
+  Non-local currency accounts  
+
+- **Credit Card Balance**  
+  Outstanding credit amount  
+
+- **Engagement Length**  
+  Customer engagement duration  
 
 ---
 
-##📊 Dashboards & Visualizations
+## 📊 Dashboards & Visualizations
 
 🏠 Home Dashboard
 💳 Loan Analysis
@@ -73,7 +96,7 @@ Engagement Length – Customer engagement duration
 
 ---
 
-##📌 Summary Dashboard
+## 📌 Summary Dashboard
 
 📌 Insights & Conclusion
 
@@ -87,13 +110,13 @@ Customer engagement patterns
 
 ---
 
-##🚀 Future Scope
+## 🚀 Future Scope
 Improve risk prediction models
 Enhance dashboards with real-time data
 Identify strategies to increase customer acquisition
 Provide deeper insights into customer financial behavior
 
-##🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 Power BI
 DAX (Data Analysis Expressions)
 Data Modeling
