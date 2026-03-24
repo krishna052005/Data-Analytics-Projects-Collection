@@ -59,6 +59,3 @@ This project focuses on analyzing cryptocurrency market data using a complete da
 * Identified patterns in price fluctuations and volatility
 * Observed correlations between major cryptocurrencies
 * Built predictive models to forecast future trends
-
-
-⭐ If you like this project, give it a star!
